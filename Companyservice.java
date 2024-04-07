@@ -32,5 +32,15 @@ public class Companyservice
 		return repo.findById.get();
 		
 	}
+	   //deleting the particular record with cid
+	   public void delete(Integer id)
+	   {
+	      repo.deleteById(id);
+	   }
+	   //update the record
+	   public void update(Company comp)
+	   {
+		   repo.save(comp);
+	   }
 }
 
